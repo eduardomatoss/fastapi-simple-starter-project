@@ -34,8 +34,6 @@ local/test:
 local/run:
 	python run.py
 
-local/generate-diagram:
-	python .docs/diagrams/diagram.py -Tpng
 
 docker/build: generate-default-env-file
 	CURRENT_UID=${DOCKER_USER} docker-compose build ${APP_NAME}
