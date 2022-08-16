@@ -1,0 +1,4 @@
+[bandit]
+exclude: .docs,.github
+
+skips: B311,B104

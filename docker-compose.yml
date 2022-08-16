@@ -1,0 +1,40 @@
+version: "3.4"
+services:
+  fastapi-simple-starter-project:
+    tty: true
+    image: "eduardomatoss/fastapi-simple-starter-project"
+    stdin_open: true
+    build:
+      context: .
+      target: "development"
+    volumes:
+      - ".:/app"
+    environment:
+      - ENV_FOR_DYNACONF=development
+      - DATABASE_URL=project_starter-db
+      - DATABASE_NAME=project_starter
+      - DATABASE_USER=postgres
+      - DATABASE_PASSWORD=postgres
+      - DATABASE_PORT=5432
+    ports:
+      - "8000:8000"
+    networks:
+      - db_nw
+
+  project_starter-db:
+    image: postgres:11
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=project_starter
+    networks:
+      - db_nw
+
+networks:
+  db_nw:
+    driver: bridge
+
+volumes:
+  project_starter-db:

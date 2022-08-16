@@ -1,0 +1,30 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+fastapi = "==0.78.0"
+sentry-sdk = "==1.5.12"
+dynaconf = "==3.1.9"
+starlette-exporter = "==0.13.0"
+uvicorn = "==0.17.6"
+fastapi-sqlalchemy = "==0.2.1"
+psycopg2-binary = "==2.9.3"
+alembic = "==1.8.1"
+pydantic = "==1.9.1"
+requests = "==2.28.0"
+
+[dev-packages]
+black = "==22.3.0"
+pytest = "==7.1.2"
+pytest-cov = "==3.0.0"
+bandit = "==1.7.4"
+flake8 = "==4.0.1"
+diagrams = "==0.21.1"
+
+[requires]
+python_version = "3.8"
+
+[pipenv]
+allow_prereleases = true

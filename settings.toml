@@ -1,0 +1,13 @@
+[default]
+application_name="fastapi-simple-starter-project"
+application_description="fastapi-simple-starter-project"
+default_log_level="INFO"
+default_access_log="True"
+
+[test]
+
+[qa]
+
+[prod]
+default_access_log="False"
+sentry_dsn=""
