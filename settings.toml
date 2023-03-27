@@ -4,6 +4,9 @@ application_description="fastapi-simple-starter-project"
 default_log_level="INFO"
 default_access_log="True"
 
+request_ssl_verify="True"
+request_default_user_agent="fastapi-simple-starter-project"
+
 [test]
 
 [qa]

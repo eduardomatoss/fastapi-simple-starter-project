@@ -1,4 +1,4 @@
-FROM python:3.8-slim AS base
+FROM python:3.10.10-slim AS base
 
 WORKDIR /app
 
@@ -16,5 +16,7 @@ COPY . .
 
 FROM dependencies AS production
 COPY app app
+COPY alembic /app/alembic
 COPY run.py .
 COPY settings.toml .
+COPY alembic.ini .

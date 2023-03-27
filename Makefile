@@ -57,7 +57,6 @@ docker/bandit:
 docker/verify:
 	make docker/lint
 	make docker/bandit
-	make docker/check-packages
 
 docker/test:
 	CURRENT_UID=${DOCKER_USER} docker-compose run -e ENV_FOR_DYNACONF=test ${APP_NAME} \

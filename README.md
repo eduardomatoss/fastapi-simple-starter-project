@@ -2,7 +2,7 @@
 
 Simple API project starter with FastAPI
 
-[![Python 3.8](https://img.shields.io/badge/python-3.8-blue.svg)](https://www.python.org/downloads/release/python-3813/) 
+[![Python 3.10](https://img.shields.io/badge/python-3.10-blue.svg)](https://www.python.org/downloads/release/python-31010/) 
 [![PEP20](https://img.shields.io/badge/code%20style-pep20-red.svg)](https://www.python.org/dev/peps/pep-0020/) 
 [![PEP8](https://img.shields.io/badge/code%20style-pep8-orange.svg)](https://www.python.org/dev/peps/pep-0008/) 
 [![bandit](https://img.shields.io/badge/code%20style-bandit-green.svg)](https://github.com/PyCQA/bandit)
@@ -10,7 +10,7 @@ Simple API project starter with FastAPI
 
 ## Technology and Resources
 
-- [Python 3.8](https://www.python.org/downloads/release/python-3813/) - **pre-requisite**
+- [Python 3.10](https://www.python.org/downloads/release/python-31010/) - **pre-requisite**
 - [Docker](https://www.docker.com/get-started) - **pre-requisite**
 - [Docker Compose](https://docs.docker.com/compose/) - **pre-requisite**
 - [Pipenv](https://github.com/pypa/pipenv)
