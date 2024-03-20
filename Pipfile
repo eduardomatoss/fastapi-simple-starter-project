@@ -16,7 +16,7 @@ pydantic = "==1.9.1"
 requests = "==2.31.0"
 
 [dev-packages]
-black = "==22.3.0"
+black = "==24.3.0"
 pytest = "==7.1.2"
 pytest-cov = "==3.0.0"
 bandit = "==1.7.4"
